@@ -34,7 +34,6 @@ Then open the URL shown (e.g. http://localhost:5173).
 - **Tailwind CSS** for the dark sidebar UI
 
 ## Project structure
-
 - `src/store/transformStore.ts` — Zustand store (frames, selection, actions)
 - `src/components/Scene3D.tsx` — Canvas, frame hierarchy, TransformControls, Grid
 - `src/components/FrameNode.tsx` — Single frame (group + axes + dashed lines + children)
