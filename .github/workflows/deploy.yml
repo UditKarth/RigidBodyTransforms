@@ -27,6 +27,10 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+        env:
+          # User site repo (e.g. uditkarth.github.io) → base '/' for root URL
+          # Project repo → base './' for /repo-name/ URL
+          VITE_BASE: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || './' }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
